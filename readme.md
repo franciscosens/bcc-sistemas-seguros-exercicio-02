@@ -20,7 +20,7 @@ Sistema deveria filtrar pela coluna de registro_ativo = 1, desta forma apresenta
 
 Imagem de sucesso da execução do SQL Injection: 
 
-![Imagem de sucesso da execução do SQL Injection](assets/imagens/questão01/sql&#32;injection&#32;sucesso.png)
+![Imagem de sucesso da execução do SQL Injection](assets/imagens/questão01/SQL&#32;Injection&#32;sucesso.png)
 
 Consulta no Banco de Dados:
 
