@@ -2,7 +2,6 @@ package dao;
 
 import bean.Cliente;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -10,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Francisco Lcuas Sens e Patrick Nascimento
+ * @author Francisco Lucas Sens e Patrick Nascimento
  */
 public class ClienteDAOQuestao01 {
 
@@ -22,9 +21,7 @@ public class ClienteDAOQuestao01 {
         Connection conexao = Conexao.conectar();
         Statement st = conexao.createStatement();
 
-        st.execute(query);
-
-        ResultSet resultSet = st.getResultSet();
+        ResultSet resultSet = st.executeQuery(query);
         List<Cliente> clientes = new ArrayList<>();
         while (resultSet.next()) {
             Cliente cliente = new Cliente();

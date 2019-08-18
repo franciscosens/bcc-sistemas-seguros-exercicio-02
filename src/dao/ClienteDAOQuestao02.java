@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dao;
 
 import bean.Cliente;
@@ -14,22 +9,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author flsens
+ * @author Francisco Lucas Sens e Patrick Nascimento
  */
 public class ClienteDAOQuestao02 {
 
     public List<Cliente> obterTodos(String busca) throws SQLException {
-        busca = String.format("%%%s%%", busca);
 
-        // TODO aplicar regex
+        boolean match = busca.matches("([a-zA-Zà-úÀ-Ú0-9\\s]*)");
+
+        if (match) {
+            busca = String.format("%%%s%%", busca);
+        } else {
+            busca = "";
+        }
+
         String query = "SELECT * FROM clientes WHERE registro_ativo = 1 AND nome LIKE '" + busca + "'";
         System.out.println("QUESTÃO 01: " + query);
         Connection conexao = Conexao.conectar();
         Statement st = conexao.createStatement();
-        st.execute(query);
 
-        ResultSet resultSet = st.getResultSet();
+        ResultSet resultSet = st.executeQuery(query);
         List<Cliente> clientes = new ArrayList<>();
         while (resultSet.next()) {
             Cliente cliente = new Cliente();
