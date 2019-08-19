@@ -4,7 +4,7 @@ Fundação da Universidade Regional de Blumenau
 
 Alunos: 
 * Francisco Lucas Sens
-* Patrick Nascimento
+* Patrick Krauss
 
 
 [Enunciado](assets/L02-SQLInjection.pdf)
