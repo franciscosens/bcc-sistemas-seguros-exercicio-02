@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Francisco Lucas Sens e Patrick Nascimento
+ * @author Francisco Lucas Sens e Patrick Krausss
  */
 public class ClienteDAOQuestao03 {
 

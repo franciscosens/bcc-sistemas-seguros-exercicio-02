@@ -1,5 +1,5 @@
 /**
- * Author:  Francisco Lucas Sens e Patrick Nascimento
+ * Author:  Francisco Lucas Sens e Patrick Krausss
  * Created: 16/08/2019
  */
 

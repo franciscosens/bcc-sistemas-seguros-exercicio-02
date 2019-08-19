@@ -1,7 +1,7 @@
 package bean;
 
 /**
- * @author Francisco Lucas Sens e Patrick Nascimento
+ * @author Francisco Lucas Sens e Patrick Krausss
  */
 public class Cliente {
 

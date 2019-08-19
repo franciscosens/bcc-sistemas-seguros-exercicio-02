@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * @author Francisco Lucas Sens e Patrick Nascimento
+ * @author Francisco Lucas Sens e Patrick Krausss
  */
 public class Conexao {
 

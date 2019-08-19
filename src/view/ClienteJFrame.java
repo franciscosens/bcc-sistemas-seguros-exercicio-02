@@ -10,7 +10,7 @@ import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
 /**
- * @author Francisco Lucas Sens e Patrick Nascimento
+ * @author Francisco Lucas Sens e Patrick Krausss
  */
 public class ClienteJFrame extends javax.swing.JFrame {
 
